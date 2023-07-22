@@ -15,3 +15,5 @@ try{
 }
 
 shareButtons.forEach(shareButton=>shareButton.addEventListener('click', copyText))
+
+exports.build = series(scssTask, jsTask);
